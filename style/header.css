@@ -1,0 +1,72 @@
+header{
+  position: sticky;
+  top:0;
+  width: 100%;
+  backdrop-filter: blur(50px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.6rem;
+  border: 1px solid rgba(255, 255, 255, 0.186);
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  border-top: none;
+  margin-bottom: 3rem;
+  z-index: 10;
+}
+header p{
+  margin-right: auto;
+  color: var(--accent-color);
+}
+header .hamburger-icon{
+  max-width: 2rem;
+}
+
+header nav.top-nav{
+  margin-right: auto;
+  display: none;
+}
+
+header nav.top-nav ul{
+  display: flex;
+  justify-content: center;
+  gap: 1.7rem;
+  padding-right: 2.5rem;
+}
+
+header nav.top-nav ul li.goto-home-btn{
+  opacity: 0.5;
+}
+
+header nav.top-nav ul li,
+header nav.top-nav li a{
+  font-size: 0.8rem;
+  color: var(--primary-color);
+  opacity: 0.7;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+header nav.top-nav li a.section-nav.active{
+  color: var(--accent-color);
+  opacity: 1;
+}
+
+header .github-icon{
+  max-width: 2rem;
+  margin-left: auto;
+  display: none;
+}
+
+@media(width > 900px){
+  header nav.top-nav{
+    display: block;
+    margin-right: auto;
+  }
+  header .hamburger-icon{
+    display: none;
+  }
+  header .github-icon{
+    display: inline-block;
+  }
+}

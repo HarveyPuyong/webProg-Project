@@ -1,0 +1,76 @@
+#skills-section{
+  position: relative;
+  margin-bottom: 40rem;
+}
+
+#skills-section .tech-stacks-btn,
+#skills-section .tools-btn{
+  color: inherit;
+  background: transparent;
+  border: none;
+  display: inline-block;
+  font-size: var(--XS-Fsize);
+  opacity: 0.6;
+  margin-right: 0.4rem;
+  cursor: pointer;
+  margin-bottom: 1rem;
+}
+
+#skills-section button.selected{
+  color: var(--accent-color);
+  background-color: rgb(28, 28, 15);
+  padding: 0.4rem 0.5rem;
+  border-radius: 5px;
+  opacity: 1;
+}
+
+#skills-section .skills-container.tools{
+  display: none;
+}
+
+#skills-section button{
+  opacity: 0;
+}
+
+#skills-section .skills-container.d-grid{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+  gap: 0.7rem;
+}
+
+#skills-section .skills-container .skill-card {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  border: 1.6px solid rgb(48, 45, 21);
+  border-radius: 5px;
+  padding: 0.7rem;
+  cursor: pointer;
+  transition: 0.2s;
+  opacity: 0;
+}
+
+.skill-card.animate{
+  animation: skill-up 1.2s ease-in-out forwards;
+}
+
+#skills-section .skills-container .skill-card.tool{
+  display: none;
+}
+
+#skills-section .skills-container .skill-card:hover{
+  background-color: #e6c40036;
+}
+
+#skills-section .skills-container .skill-card .skill-icon{
+  max-width: 1.7rem;
+} 
+#skills-section .skills-container .skill-card .skill-name{
+  font-size: calc(var(--semi-small-Fsize) - 0.1rem);
+  display: inline;
+}
+#skills-section .skills-container .skill-card .mastery-level{
+  display: none;
+  font-size: calc(var(--XS-Fsize) - 0.1rem) ;
+  color: var(--accent-color);
+}

@@ -1,0 +1,217 @@
+@keyframes from-left-slide{
+  from{
+    transform: translateX(-60px);
+    opacity: 0;
+  }
+  to{
+    transform: translateX(0px);
+    opacity: 1;
+  }
+  
+}
+@keyframes from-right-slide{
+  from{
+    transform: translateX(60px);
+    opacity: 0;
+  }
+  to{
+    transform: translateX(0px);
+    opacity: 0.5;
+  }
+  
+}
+
+@keyframes floating-up{
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-7px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes floating-down{
+  0% {
+    transform: translateY(0px);
+  }
+
+  50% {
+    transform: translateY(7px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes appear-background-color {
+  0%{
+    background: radial-gradient(circle, var(--background-color) -60%, rgba(255, 255, 255, 0) 100%);
+  }
+  10%{
+    background: radial-gradient(circle, var(--background-color) -10%, rgba(255, 255, 255, 0) 100%);
+    z-index: 5;
+  }
+  20%{
+    background: radial-gradient(circle, var(--background-color) 20%, rgba(255, 255, 255, 0) 100%);
+    z-index: 5;
+  }
+  30%{
+    background: radial-gradient(circle, var(--background-color) 30%, rgba(255, 255, 255, 0) 100%);
+    z-index: 5;
+  }
+  40%{
+    background: radial-gradient(circle, var(--background-color) 40%, rgba(255, 255, 255, 0) 100%);
+    z-index: 5;
+  }
+  50%{
+    background: radial-gradient(circle, var(--background-color) 50%, rgba(62, 62, 62, 0) 100%);
+    z-index: 5;
+  }
+  60%{
+    background: radial-gradient(circle, var(--background-color) 60%, rgba(62, 62, 62, 0) 100%);
+    z-index: 5;
+  }
+  70%{
+    background: radial-gradient(circle, var(--background-color) 70%,rgba(62, 62, 62, 0) 100%);
+    z-index: 5;
+  }
+  80%{
+    background: radial-gradient(circle, var(--background-color) 80%, rgba(62, 62, 62, 0) 100%);
+    z-index: 5;
+  }
+  90%{
+    background: radial-gradient(circle, var(--background-color) 90%,rgba(62, 62, 62, 0) 100%);
+    z-index: 5;
+  }
+  100%{
+    background: radial-gradient(circle, var(--background-color) 100%, rgba(62, 62, 62, 0) 100%);
+    z-index: 5;
+  }
+}
+
+@keyframes fadeout-background-color {
+  0%{
+    background: radial-gradient(circle, var(--background-color) 100%, rgba(255, 255, 255, 0) 100%);
+  }
+  10%{
+    background: radial-gradient(circle, var(--background-color) 90%, rgba(255, 255, 255, 0) 100%);
+    z-index: 5;
+  }
+  20%{
+    background: radial-gradient(circle, var(--background-color) 80%, rgba(255, 255, 255, 0) 100%);
+    z-index: 5;
+  }
+  30%{
+    background: radial-gradient(circle, var(--background-color) 70%, rgba(255, 255, 255, 0) 100%);
+    z-index: 5;
+  }
+  40%{
+    background: radial-gradient(circle, var(--background-color) 60%, rgba(255, 255, 255, 0) 100%);
+    z-index: 5;
+  }
+  50%{
+    background: radial-gradient(circle, var(--background-color) 50%, rgba(62, 62, 62, 0) 100%);
+    z-index: 5;
+  }
+  60%{
+    background: radial-gradient(circle, var(--background-color) 40%, rgba(62, 62, 62, 0) 100%);
+    z-index: 5;
+  }
+  70%{
+    background: radial-gradient(circle, var(--background-color) 30%,rgba(62, 62, 62, 0) 100%);
+    z-index: 5;
+  }
+  80%{
+    background: radial-gradient(circle, var(--background-color) 20%, rgba(62, 62, 62, 0) 100%);
+    z-index: 5;
+  }
+  90%{
+    background: radial-gradient(circle, var(--background-color) -10%,rgba(62, 62, 62, 0) 100%);
+    z-index: 5;
+  }
+  100%{
+    background: radial-gradient(circle, rgba(62, 62, 62, 0) -60%, rgba(62, 62, 62, 0) 100%);
+    z-index: 0;
+  }
+}
+
+@keyframes hide-sideNav{
+  0%{
+    transform: translateX(0px);
+  }
+  100%{
+    transform: translateX(220px);
+  }
+}
+
+@keyframes show-sideNav{
+  0%{
+    transform: translateX(220px);
+  }
+  100%{
+    transform: translateX(0px);
+  }
+}
+
+@keyframes scale-up{
+  0%{
+    transform: scale(0);
+    opacity: 0;
+  }
+  20%{
+    opacity: 0.5;
+  }
+  100%{
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes scale-down{
+  0%{
+    transform: scale(1);
+    opacity: 1;
+  }
+  10%{
+    transform: scale(0.8);
+  }
+  30%{
+    opacity: 0.5;
+  }
+
+  70%{
+    opacity: 0.1;
+  }
+
+  100%{
+    transform: scale(0);
+    opacity: 0;
+    display: none;
+  }
+}
+
+@keyframes fade-in{
+  from{
+    opacity: 0;
+  }
+  to{
+    opacity: 1;
+  }
+}
+
+@keyframes skill-up{
+  0%{
+    transform: translateY(100px);
+  }
+  20%{
+    opacity: 0.3;
+  }
+  100%{
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}

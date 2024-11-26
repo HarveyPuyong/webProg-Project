@@ -1,0 +1,139 @@
+:root{
+  --primary-color: rgb(234, 234, 234);
+  --neutral-color: #050505;
+  --accent-color: #e6c200;
+  --pastel-color: rgba(22, 22, 22, 0.457);
+
+  --XS-Fsize: 0.85rem;
+  --semi-small-Fsize: 1.1rem;
+  --small-Fsize: 1.3rem;
+  --medium-Fsize: 1.4rem;
+  --large-Fsize: 1.7rem;
+  --XL-Fsize: 1.9rem;
+  
+}
+
+*{
+  padding: 0;
+  margin:0;
+  box-sizing: border-box;
+}
+
+img{
+  width: 100%;
+}
+
+a{
+  text-decoration: none;
+}
+
+ul{
+list-style: none;
+}
+
+html{
+  scroll-behavior: smooth;
+  scroll-padding-top: 100px;
+}
+
+body{
+  color: var(--primary-color);
+  font-family: "Poppins", sans-serif;
+  background-color: white;
+}
+
+body .background{
+  --background-color: rgb(0, 0, 0);
+
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.main-wrapper{
+  --wrapper-max-width: 950px;
+  --wrapper-padding: 10%;
+
+  width: min(var(--wrapper-max-width), 100% - var(--wrapper-padding));
+  margin-inline: auto;
+  position: relative;
+  height: 100%;
+  z-index: 5;
+}
+
+section{
+  display: none;
+
+}
+
+section .heading{
+  font-size: var(--XL-Fsize);
+  font-weight: 500;
+  margin-bottom: 2rem;
+  text-align: left;
+  position: relative;
+  opacity: 0;
+}
+
+section .heading.animate{
+  animation: from-left-slide 2s forwards;
+}
+
+section .line {
+  content: "";
+  position: absolute;
+  height: 0.2rem;
+  width: 5rem;
+  bottom: -7px;
+  left: 0px;
+  background-color: var(--accent-color);
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 4px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgb(74, 74, 74);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--accent-color);
+  border-radius: 10px;
+}
+
+/* home style kapag hindi pa ayos ang structure */
+#home{
+  position: absolute;
+  top: 7%;
+  left: 50%;
+  transform: translate(-50%, 7%);
+  text-align: center;
+  z-index: 2;
+  color: black;
+}
+
+#home img{
+  max-width: 15rem;
+}
+
+#home .socmed-icon{
+  max-width: 7rem;
+}
+#home button.next-btn {
+  color:black;
+  border:1px solid black;
+  background: transparent;
+  padding: 0.5rem 3rem;
+  border-radius: 5px;
+  margin-bottom: 5rem;
+  margin-top: 2rem;
+  cursor: pointer;
+}
+
+#home button.more-detail-btn {
+  display: none;
+}
